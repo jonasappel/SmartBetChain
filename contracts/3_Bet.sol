@@ -101,3 +101,5 @@ contract Bet {
     //    payable(msg.sender).transfer(amount);
     //}
 }
+
+*/test

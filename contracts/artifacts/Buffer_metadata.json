@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/oraclizeAPI.sol": "Buffer"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/oraclizeAPI.sol": {
+			"keccak256": "0x1c2c7084022f6bf430f2efccd959a7bd8d41e6b1e3bd24cab1ea674a8f2aa27a",
+			"urls": [
+				"bzz-raw://4c738605d188f4b221aee05ca948903e9a485b7b42630b6d7b0798932d4c5924",
+				"dweb:/ipfs/QmRfA9nJWPEAVRfvEmMu4L76FH9gX6b8fhLvjY7i7RMRgT"
+			]
+		}
+	},
+	"version": 1
+}

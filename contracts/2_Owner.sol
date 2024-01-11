@@ -51,4 +51,8 @@ contract Owner {
     function getOwner() external view returns (address) {
         return owner;
     }
+
+    fallback() external {
+        
+    }
 } 

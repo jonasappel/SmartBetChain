@@ -1,0 +1,202 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "608060405234801561001057600080fd5b506102a4806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806327dc297e1461003b57806338bbfa50146100ea575b600080fd5b6100e86004803603604081101561005157600080fd5b8135919081019060408101602082013564010000000081111561007357600080fd5b82018360208201111561008557600080fd5b803590602001918460018302840111640100000000831117156100a757600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061021e945050505050565b005b6100e86004803603606081101561010057600080fd5b8135919081019060408101602082013564010000000081111561012257600080fd5b82018360208201111561013457600080fd5b8035906020019184600183028401116401000000008311171561015657600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092959493602081019350359150506401000000008111156101a957600080fd5b8201836020820111156101bb57600080fd5b803590602001918460018302840111640100000000831117156101dd57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061023e945050505050565b60408051600081526020810190915261023a908390839061023e565b5050565b5050600080805260036020527f3617319a054d772f909f7c479a2cebe5066e836a939412e32403c99029b92eff555056fea265627a7a72315820d29f46abb867b5fb6c933567fb4bbebb8d565c1cf4bee2579c297ae4e5e515fa64736f6c63430005110032",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x2A4 DUP1 PUSH2 0x20 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x36 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x27DC297E EQ PUSH2 0x3B JUMPI DUP1 PUSH4 0x38BBFA50 EQ PUSH2 0xEA JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0xE8 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x51 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD SWAP2 SWAP1 DUP2 ADD SWAP1 PUSH1 0x40 DUP2 ADD PUSH1 0x20 DUP3 ADD CALLDATALOAD PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x73 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x85 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0xA7 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 POP PUSH2 0x21E SWAP5 POP POP POP POP POP JUMP JUMPDEST STOP JUMPDEST PUSH2 0xE8 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x60 DUP2 LT ISZERO PUSH2 0x100 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD SWAP2 SWAP1 DUP2 ADD SWAP1 PUSH1 0x40 DUP2 ADD PUSH1 0x20 DUP3 ADD CALLDATALOAD PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x122 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x134 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0x156 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 SWAP5 SWAP4 PUSH1 0x20 DUP2 ADD SWAP4 POP CALLDATALOAD SWAP2 POP POP PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x1A9 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x1BB JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0x1DD JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 POP PUSH2 0x23E SWAP5 POP POP POP POP POP JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x0 DUP2 MSTORE PUSH1 0x20 DUP2 ADD SWAP1 SWAP2 MSTORE PUSH2 0x23A SWAP1 DUP4 SWAP1 DUP4 SWAP1 PUSH2 0x23E JUMP JUMPDEST POP POP JUMP JUMPDEST POP POP PUSH1 0x0 DUP1 DUP1 MSTORE PUSH1 0x3 PUSH1 0x20 MSTORE PUSH32 0x3617319A054D772F909F7C479A2CEBE5066E836A939412E32403C99029B92EFF SSTORE POP JUMP INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0xD2 SWAP16 CHAINID 0xAB 0xB8 PUSH8 0xB5FB6C933567FB4B 0xBE 0xBB DUP14 JUMP 0x5C SHR DELEGATECALL 0xBE 0xE2 JUMPI SWAP13 0x29 PUSH27 0xE4E5E515FA64736F6C634300051100320000000000000000000000 ",
+			"sourceMap": "10894:47919:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;10894:47919:0;;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "608060405234801561001057600080fd5b50600436106100365760003560e01c806327dc297e1461003b57806338bbfa50146100ea575b600080fd5b6100e86004803603604081101561005157600080fd5b8135919081019060408101602082013564010000000081111561007357600080fd5b82018360208201111561008557600080fd5b803590602001918460018302840111640100000000831117156100a757600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061021e945050505050565b005b6100e86004803603606081101561010057600080fd5b8135919081019060408101602082013564010000000081111561012257600080fd5b82018360208201111561013457600080fd5b8035906020019184600183028401116401000000008311171561015657600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092959493602081019350359150506401000000008111156101a957600080fd5b8201836020820111156101bb57600080fd5b803590602001918460018302840111640100000000831117156101dd57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061023e945050505050565b60408051600081526020810190915261023a908390839061023e565b5050565b5050600080805260036020527f3617319a054d772f909f7c479a2cebe5066e836a939412e32403c99029b92eff555056fea265627a7a72315820d29f46abb867b5fb6c933567fb4bbebb8d565c1cf4bee2579c297ae4e5e515fa64736f6c63430005110032",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x36 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x27DC297E EQ PUSH2 0x3B JUMPI DUP1 PUSH4 0x38BBFA50 EQ PUSH2 0xEA JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0xE8 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x51 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD SWAP2 SWAP1 DUP2 ADD SWAP1 PUSH1 0x40 DUP2 ADD PUSH1 0x20 DUP3 ADD CALLDATALOAD PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x73 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x85 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0xA7 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 POP PUSH2 0x21E SWAP5 POP POP POP POP POP JUMP JUMPDEST STOP JUMPDEST PUSH2 0xE8 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x60 DUP2 LT ISZERO PUSH2 0x100 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD SWAP2 SWAP1 DUP2 ADD SWAP1 PUSH1 0x40 DUP2 ADD PUSH1 0x20 DUP3 ADD CALLDATALOAD PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x122 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x134 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0x156 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 SWAP5 SWAP4 PUSH1 0x20 DUP2 ADD SWAP4 POP CALLDATALOAD SWAP2 POP POP PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x1A9 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x1BB JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0x1DD JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 POP PUSH2 0x23E SWAP5 POP POP POP POP POP JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x0 DUP2 MSTORE PUSH1 0x20 DUP2 ADD SWAP1 SWAP2 MSTORE PUSH2 0x23A SWAP1 DUP4 SWAP1 DUP4 SWAP1 PUSH2 0x23E JUMP JUMPDEST POP POP JUMP JUMPDEST POP POP PUSH1 0x0 DUP1 DUP1 MSTORE PUSH1 0x3 PUSH1 0x20 MSTORE PUSH32 0x3617319A054D772F909F7C479A2CEBE5066E836A939412E32403C99029B92EFF SSTORE POP JUMP INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0xD2 SWAP16 CHAINID 0xAB 0xB8 PUSH8 0xB5FB6C933567FB4B 0xBE 0xBB DUP14 JUMP 0x5C SHR DELEGATECALL 0xBE 0xE2 JUMPI SWAP13 0x29 PUSH27 0xE4E5E515FA64736F6C634300051100320000000000000000000000 ",
+			"sourceMap": "10894:47919:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;10894:47919:0;;;;;;;;;;;;;;;;;;;;;;;;16106:122;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;16106:122:0;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;16106:122:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;16106:122:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;16106:122:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;16106:122:0;;-1:-1:-1;16106:122:0;;-1:-1:-1;;;;;16106:122:0:i;:::-;;16234:178;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;16234:178:0;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;16234:178:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;16234:178:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;16234:178:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;16234:178:0;;;;;;;;-1:-1:-1;16234:178:0;;-1:-1:-1;;21:11;5:28;;2:2;;;46:1;43;36:12;2:2;16234:178:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;16234:178:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;16234:178:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;16234:178:0;;-1:-1:-1;16234:178:0;;-1:-1:-1;;;;;16234:178:0:i;16106:122::-;16208:12;;;16218:1;16208:12;;;;;;;;16181:40;;16192:5;;16199:7;;16181:10;:40::i;:::-;16106:122;;:::o;16234:178::-;-1:-1:-1;;16403:1:0;16358:34;;;:22;:34;;;:47;-1:-1:-1;16234:178:0:o"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "135200",
+				"executionCost": "183",
+				"totalCost": "135383"
+			},
+			"external": {
+				"__callback(bytes32,string)": "infinite",
+				"__callback(bytes32,string,bytes)": "infinite"
+			},
+			"internal": {
+				"ba2cbor(bytes memory[] memory)": "infinite",
+				"copyBytes(bytes memory,uint256,uint256,bytes memory,uint256)": "infinite",
+				"ecrecovery(bytes32,bytes memory)": "infinite",
+				"getCodeSize(address)": "infinite",
+				"indexOf(string memory,string memory)": "infinite",
+				"matchBytes32Prefix(bytes32,bytes memory,uint256)": "infinite",
+				"oraclize_cbAddress()": "infinite",
+				"oraclize_getNetworkName()": "infinite",
+				"oraclize_getPrice(string memory)": "infinite",
+				"oraclize_getPrice(string memory,uint256)": "infinite",
+				"oraclize_newRandomDSQuery(uint256,uint256,uint256)": "infinite",
+				"oraclize_query(string memory,bytes memory[1] memory)": "infinite",
+				"oraclize_query(string memory,bytes memory[1] memory,uint256)": "infinite",
+				"oraclize_query(string memory,bytes memory[2] memory)": "infinite",
+				"oraclize_query(string memory,bytes memory[2] memory,uint256)": "infinite",
+				"oraclize_query(string memory,bytes memory[3] memory)": "infinite",
+				"oraclize_query(string memory,bytes memory[3] memory,uint256)": "infinite",
+				"oraclize_query(string memory,bytes memory[4] memory)": "infinite",
+				"oraclize_query(string memory,bytes memory[4] memory,uint256)": "infinite",
+				"oraclize_query(string memory,bytes memory[5] memory)": "infinite",
+				"oraclize_query(string memory,bytes memory[5] memory,uint256)": "infinite",
+				"oraclize_query(string memory,bytes memory[] memory)": "infinite",
+				"oraclize_query(string memory,bytes memory[] memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory)": "infinite",
+				"oraclize_query(string memory,string memory,string memory)": "infinite",
+				"oraclize_query(string memory,string memory,string memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory[1] memory)": "infinite",
+				"oraclize_query(string memory,string memory[1] memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory[2] memory)": "infinite",
+				"oraclize_query(string memory,string memory[2] memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory[3] memory)": "infinite",
+				"oraclize_query(string memory,string memory[3] memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory[4] memory)": "infinite",
+				"oraclize_query(string memory,string memory[4] memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory[5] memory)": "infinite",
+				"oraclize_query(string memory,string memory[5] memory,uint256)": "infinite",
+				"oraclize_query(string memory,string memory[] memory)": "infinite",
+				"oraclize_query(string memory,string memory[] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[1] memory)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[1] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[2] memory)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[2] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[3] memory)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[3] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[4] memory)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[4] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[5] memory)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[5] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[] memory)": "infinite",
+				"oraclize_query(uint256,string memory,bytes memory[] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory,string memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory,string memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[1] memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[1] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[2] memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[2] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[3] memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[3] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[4] memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[4] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[5] memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[5] memory,uint256)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[] memory)": "infinite",
+				"oraclize_query(uint256,string memory,string memory[] memory,uint256)": "infinite",
+				"oraclize_randomDS_getSessionPubKeyHash()": "infinite",
+				"oraclize_randomDS_proofVerify__main(bytes memory,bytes32,bytes memory,string memory)": "infinite",
+				"oraclize_randomDS_proofVerify__returnCode(bytes32,string memory,bytes memory)": "infinite",
+				"oraclize_randomDS_proofVerify__sessionKeyValidity(bytes memory,uint256)": "infinite",
+				"oraclize_randomDS_setCommitment(bytes32,bytes32)": "infinite",
+				"oraclize_setCustomGasPrice(uint256)": "infinite",
+				"oraclize_setNetwork()": "infinite",
+				"oraclize_setNetwork(uint8)": "infinite",
+				"oraclize_setNetworkName(string memory)": "infinite",
+				"oraclize_setProof(bytes1)": "infinite",
+				"parseAddr(string memory)": "infinite",
+				"parseInt(string memory)": "infinite",
+				"parseInt(string memory,uint256)": "infinite",
+				"safeMemoryCleaner()": "infinite",
+				"safeParseInt(string memory)": "infinite",
+				"safeParseInt(string memory,uint256)": "infinite",
+				"safer_ecrecover(bytes32,uint8,bytes32,bytes32)": "infinite",
+				"strCompare(string memory,string memory)": "infinite",
+				"strConcat(string memory,string memory)": "infinite",
+				"strConcat(string memory,string memory,string memory)": "infinite",
+				"strConcat(string memory,string memory,string memory,string memory)": "infinite",
+				"strConcat(string memory,string memory,string memory,string memory,string memory)": "infinite",
+				"stra2cbor(string memory[] memory)": "infinite",
+				"uint2str(uint256)": "infinite",
+				"verifySig(bytes32,bytes memory,bytes memory)": "infinite"
+			}
+		},
+		"methodIdentifiers": {
+			"__callback(bytes32,string)": "27dc297e",
+			"__callback(bytes32,string,bytes)": "38bbfa50"
+		}
+	},
+	"abi": [
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "_myid",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "string",
+					"name": "_result",
+					"type": "string"
+				}
+			],
+			"name": "__callback",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "_myid",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "string",
+					"name": "_result",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "_proof",
+					"type": "bytes"
+				}
+			],
+			"name": "__callback",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

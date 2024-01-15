@@ -50,37 +50,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "bets",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "user",
-						"type": "address"
-					},
-					{
-						"internalType": "uint8",
-						"name": "winPrediction",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "declareWinner",
+				"name": "declareBetWinner",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -98,6 +69,11 @@
 						"internalType": "uint8",
 						"name": "winner",
 						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOver",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -152,11 +128,11 @@
 	},
 	"sources": {
 		"contracts/BetContract.sol": {
-			"keccak256": "0xd9e21ddc03f57dd232cb3c3c9197310d3b38884ad950ce9031bd8178124c6631",
+			"keccak256": "0x601a2eab0e41cb2fb947d5dcbdfaeec3c5bbea5a7e474285b957565da1dd403f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://360b899b94504ed838dd0195ec1247cfc62feb3e68ce1157f1cd9183501da1c4",
-				"dweb:/ipfs/QmdAujCGEB3puCfg5gMF4Wd6QwFgdSyTpfxdZbXp1sXB9f"
+				"bzz-raw://38f9d633b617c1578fd11ffa1de4daecdba9f3d581ad9e3f968336cc7186b51b",
+				"dweb:/ipfs/QmSXxH9QHDzHhdeSMeBXp11zNSMPn9yukLh7m6Dyo19r3e"
 			]
 		}
 	},

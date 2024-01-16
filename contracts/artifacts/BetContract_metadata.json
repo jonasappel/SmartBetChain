@@ -14,6 +14,11 @@
 				"inputs": [
 					{
 						"internalType": "uint8",
+						"name": "_gameId",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
 						"name": "_winPrediction",
 						"type": "uint8"
 					}
@@ -29,6 +34,11 @@
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_betAmount",
+						"type": "uint256"
 					}
 				],
 				"name": "addGame",
@@ -38,6 +48,11 @@
 			},
 			{
 				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_gameId",
+						"type": "uint8"
+					},
 					{
 						"internalType": "uint8",
 						"name": "_winner",
@@ -50,16 +65,33 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "declareBetWinner",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_gameId",
+						"type": "uint256"
+					}
+				],
+				"name": "collectWinnings",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "game",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "games",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
 					{
 						"internalType": "string",
 						"name": "name",
@@ -74,6 +106,31 @@
 						"internalType": "bool",
 						"name": "isOver",
 						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "counterTeamOne",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "counterTeamTwo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "counterDraw",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betCount",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -90,13 +147,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "removeGame",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -128,11 +178,11 @@
 	},
 	"sources": {
 		"contracts/BetContract.sol": {
-			"keccak256": "0x601a2eab0e41cb2fb947d5dcbdfaeec3c5bbea5a7e474285b957565da1dd403f",
+			"keccak256": "0x32ff38cae31ba94bf8660d3310d2b08e5a70de19b5867aa81a768b0381940d89",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://38f9d633b617c1578fd11ffa1de4daecdba9f3d581ad9e3f968336cc7186b51b",
-				"dweb:/ipfs/QmSXxH9QHDzHhdeSMeBXp11zNSMPn9yukLh7m6Dyo19r3e"
+				"bzz-raw://112007f703355be7f9e83c92f77f580fdea1f28179c132757a58a6db74967477",
+				"dweb:/ipfs/QmedvpNeCqCTNAs2tKoMcXc6mT74ShH1iHYCGHMN6sSJuS"
 			]
 		}
 	},

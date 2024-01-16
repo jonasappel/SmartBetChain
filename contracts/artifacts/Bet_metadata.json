@@ -152,7 +152,7 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
@@ -183,11 +183,11 @@
 			]
 		},
 		"contracts/3_Bet.sol": {
-			"keccak256": "0x3cc4ae5e540b0e7d9e0f1303bc9f0887cd9f70ea077acfd827304acd9f927310",
+			"keccak256": "0x3f9d96ba2faa6c92c4bf3f8c9f7d6efc866bc6180b1eda6dc2d9b0cc01f959c9",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://28a25ff1cbf9d3fccedbfabad5a8827992a01407bd129d9449bbc50b0c7c3685",
-				"dweb:/ipfs/QmToDZDntf18PGJBKwPDw4wfy7s6DFGC7GowSAkw5ysuJ2"
+				"bzz-raw://0fdbb76d39f03b823946d7ec01a73085a0c1cb120b1692a1f9156a39a41acc3f",
+				"dweb:/ipfs/QmNNYmTpef5yZM6nMsXRhDspTvJL41zqVwuABgMCq7QUZN"
 			]
 		}
 	},

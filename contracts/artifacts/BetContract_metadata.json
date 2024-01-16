@@ -67,6 +67,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint8",
+						"name": "_gameId",
+						"type": "uint8"
+					}
+				],
+				"name": "closeBets",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_gameId",
 						"type": "uint256"
@@ -178,11 +191,11 @@
 	},
 	"sources": {
 		"contracts/BetContract.sol": {
-			"keccak256": "0x32ff38cae31ba94bf8660d3310d2b08e5a70de19b5867aa81a768b0381940d89",
+			"keccak256": "0x213a0cce4c382a49be85b237a0a40e197004665a14151d50c8faddc7596c2449",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://112007f703355be7f9e83c92f77f580fdea1f28179c132757a58a6db74967477",
-				"dweb:/ipfs/QmedvpNeCqCTNAs2tKoMcXc6mT74ShH1iHYCGHMN6sSJuS"
+				"bzz-raw://77db37acb2b9b3951c10dd0656e489b8260db7eaf89779e1af161ce50eb4f0c6",
+				"dweb:/ipfs/QmaAE5B5NK41ipgn6HGtW79RNUUQH3pvK7W4DFK1dNaX9t"
 			]
 		}
 	},

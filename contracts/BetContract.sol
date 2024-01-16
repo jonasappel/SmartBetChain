@@ -6,7 +6,6 @@ pragma solidity ^0.8.0;
 contract BetContract {
     address public owner;
     Game[] public games;   //represents the games
-    //Bet[] bets;     //represents all bets
 
     //represents 1 bet
     struct Bet {
@@ -20,7 +19,7 @@ contract BetContract {
         uint id;   
         string name;    // e.g. "FCB - BVB"
         uint8 winner;    // 0 = Initial, 1 = Hometeam win, 2 = Guestteam win, 3 = Draw
-        bool isOver;
+        bool isOver;            //represents if bets can be placed
         uint betAmount;         //?Wetteinsatz festlegen
         uint counterTeamOne;    //counter for bets placed on team 1
         uint counterTeamTwo;    //counter for bets placed on team 2
@@ -49,13 +48,17 @@ contract BetContract {
         newGame.betAmount = _betAmount;
     }
 
-    //add winner to existing game (only by owner)
-    function addGameWinner(uint8 _gameId, uint8 _winner) public onlyOwner {
-        games[_gameId].winner = _winner;
+    //close existing game when it begins (only by owner)
+    function closeBets(uint8 _gameId) public onlyOwner {
         games[_gameId].isOver = true;
     }
 
-    //remove game (only owner) -> no good to delete items from map as keys are incremented
+    //add winner to existing game (only by owner)
+    function addGameWinner(uint8 _gameId, uint8 _winner) public onlyOwner {
+        games[_gameId].winner = _winner;
+    }
+
+    //remove game (only owner) -> no good to delete items from map as keys are incremented with array length
     //function removeGame(uint8 _gameId) public onlyOwner {
     //    delete games[_gameId];
     //}
@@ -72,8 +75,8 @@ contract BetContract {
         games[_gameId].bets[msg.sender] = Bet(msg.sender, _gameId, _winPrediction);
         games[_gameId].betCount++;
         if (_winPrediction == 1)  games[_gameId].counterTeamOne++;
-        if (_winPrediction == 2)  games[_gameId].counterTeamTwo++;
-        if (_winPrediction == 3)  games[_gameId].counterDraw++;
+        else if (_winPrediction == 2)  games[_gameId].counterTeamTwo++;
+        else if (_winPrediction == 3)  games[_gameId].counterDraw++;
     }
 
     function collectWinnings(uint _gameId) public {

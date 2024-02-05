@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.22+commit.4fc1097e"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -191,11 +191,11 @@
 	},
 	"sources": {
 		"contracts/BetContract.sol": {
-			"keccak256": "0x213a0cce4c382a49be85b237a0a40e197004665a14151d50c8faddc7596c2449",
+			"keccak256": "0x0e63a846c6431f17d59d9f6ce3dc370b5b59911c17798e77e38831da1d0e606a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://77db37acb2b9b3951c10dd0656e489b8260db7eaf89779e1af161ce50eb4f0c6",
-				"dweb:/ipfs/QmaAE5B5NK41ipgn6HGtW79RNUUQH3pvK7W4DFK1dNaX9t"
+				"bzz-raw://7814dd898bf5a0eb2ce942bcd930ecd8ecba8ccf6ac3cdc34edb604137b1713a",
+				"dweb:/ipfs/QmRR6bc7STYWzPpVmBuDPG2f2jC8c5reCppWgjaKxjGtej"
 			]
 		}
 	},

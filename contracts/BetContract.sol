@@ -39,7 +39,7 @@ contract BetContract {
         _;
     }
 
-    //add a new game using a name (only by owner)
+    //add a new game using a name and the betAmount(only by owner)
     function addGame(string memory _name, uint _betAmount) public onlyOwner {
         uint gameId = games.length;
         Game storage newGame = games.push();
@@ -63,7 +63,7 @@ contract BetContract {
     //    delete games[_gameId];
     //}
 
-    //Todo: Make this function be only usable when not owner of contract
+    //add a bet for a game using a gameId and winPrediction
     function addBet(uint8 _gameId, uint8 _winPrediction) public payable {
         require(!games[_gameId].isOver, "Game is over - no bets allowed anymore");
         require(games[_gameId].bets[msg.sender].winPrediction == 0, "You already bet - no bets allowed anymore");

@@ -87,7 +87,7 @@
 				],
 				"name": "collectWinnings",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -150,6 +150,133 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "bettorAdress",
+						"type": "address"
+					}
+				],
+				"name": "getBet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "gameId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint8",
+								"name": "winPrediction",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct BetContract.Bet",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					}
+				],
+				"name": "getBetCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getGame",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getGamesCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -191,11 +318,11 @@
 	},
 	"sources": {
 		"contracts/BetContract.sol": {
-			"keccak256": "0x0e63a846c6431f17d59d9f6ce3dc370b5b59911c17798e77e38831da1d0e606a",
+			"keccak256": "0xe722bbaa69a9e46c7e647999934a135561e830790d88e2441b92906b88fb38c0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7814dd898bf5a0eb2ce942bcd930ecd8ecba8ccf6ac3cdc34edb604137b1713a",
-				"dweb:/ipfs/QmRR6bc7STYWzPpVmBuDPG2f2jC8c5reCppWgjaKxjGtej"
+				"bzz-raw://89c6353cc0ee8c48038989cf16b9a4712b4dbdf88a020e47ef6cdb8b13129bbb",
+				"dweb:/ipfs/QmXpKnZBDvjA9KLQCRRnbwWsMbKWYRHfsvwRuq8hW3ACGx"
 			]
 		}
 	},

@@ -1,0 +1,208 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "beforeAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bet",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "winPrediction",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "betContract",
+				"outputs": [
+					{
+						"internalType": "contract BetContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkAddBet",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkAddGame",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkAddGameWinner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkCloseBets",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkCollectWinnings",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "game",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "winner",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOver",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "counterTeamOne",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "counterTeamTwo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "counterDraw",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "scripts/deploy_with_ethers.ts",
+			"details": "ContractDescription",
+			"kind": "dev",
+			"methods": {},
+			"title": "ContractName",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/BetContract_test.sol": "BetContractTest"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BetContract.sol": {
+			"keccak256": "0xe722bbaa69a9e46c7e647999934a135561e830790d88e2441b92906b88fb38c0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://89c6353cc0ee8c48038989cf16b9a4712b4dbdf88a020e47ef6cdb8b13129bbb",
+				"dweb:/ipfs/QmXpKnZBDvjA9KLQCRRnbwWsMbKWYRHfsvwRuq8hW3ACGx"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/BetContract_test.sol": {
+			"keccak256": "0x4ade89c674e95999c80788631bf03d61578fcbf6f95e86ae6c90a0e384da361b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2fe261054af488c8adfe8f9fbf074899460990a88b9956e09ecb80fcb0572ad4",
+				"dweb:/ipfs/QmaBHMEzrivHbaEUxdh6sbBgg2QNKf3pZaxSd4vejcZL2j"
+			]
+		}
+	},
+	"version": 1
+}

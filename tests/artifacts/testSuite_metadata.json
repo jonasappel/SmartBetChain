@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "beforeAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkFailure",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkSenderAndValue",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkSuccess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkSuccess2",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"beforeAll()": {
+					"notice": "'beforeAll' runs before all other tests More special functions are: 'beforeEach', 'beforeAll', 'afterEach' & 'afterAll'"
+				},
+				"checkSenderAndValue()": {
+					"notice": "Custom Transaction Context: https://remix-ide.readthedocs.io/en/latest/unittesting.html#customization #sender: account-1 #value: 100"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/BetContract_test.sol": "testSuite"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BetContract.sol": {
+			"keccak256": "0xf1e4f7a5dd171fa7fa760ec04df5f7ef492fde1ebf54e3b14f16d640b430ab9d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://539a1e73b4ef69be1b60785263c990cb63692eed1551356b14e09cdf2ad8c577",
+				"dweb:/ipfs/QmRJgyQzQaAVa8yqZTSyxRbpyZVCtb9NhhQMygcQzktcnN"
+			]
+		},
+		"remix_accounts.sol": {
+			"keccak256": "0x722e8fd271de98c2d980bda8e3d011551d9641355216b1029084b455c4c2a662",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8e57585c7061065613c796706efdae0c79a416bde447ccbe4ffaf969aeb7423e",
+				"dweb:/ipfs/QmdQCAgvob9suV3UwSR2rRetyU9fafTtEi2sDv9oRmRSLo"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/BetContract_test.sol": {
+			"keccak256": "0x95f1d9e8050e671c200ab7084e964ec5c247717f8e5b5850a66372476a1e56a9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1ce435b3e541c5823e499ad1781a116df7d58d62cf0651145e90bffcf68ec58e",
+				"dweb:/ipfs/QmXBwX8e7nKNbxrNcmWT1cubMpDiXz93PMaEdppGtp7HqZ"
+			]
+		}
+	},
+	"version": 1
+}

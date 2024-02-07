@@ -318,11 +318,11 @@
 	},
 	"sources": {
 		"contracts/BetContract.sol": {
-			"keccak256": "0xe722bbaa69a9e46c7e647999934a135561e830790d88e2441b92906b88fb38c0",
+			"keccak256": "0x7aa1e233b10bb71ea28b7dd434deb7ed77ab11e4a312157d65f11d4f426ec23e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://89c6353cc0ee8c48038989cf16b9a4712b4dbdf88a020e47ef6cdb8b13129bbb",
-				"dweb:/ipfs/QmXpKnZBDvjA9KLQCRRnbwWsMbKWYRHfsvwRuq8hW3ACGx"
+				"bzz-raw://bce1755f1b9e7701e188ae3e0c49dda4c50dd7f9cda962a289a95ad6d2a78418",
+				"dweb:/ipfs/QmTRaYPVaSguLYNe1pmipiLRtznCZiQwXz7hYGVrMbtgNa"
 			]
 		}
 	},

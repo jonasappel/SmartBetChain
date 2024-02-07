@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-//atm supports only 2 bettors betting against each other for the same amount of money (no sanity checks)
+//atm supports only bettors betting against each other for the same amount of money (no sanity checks)
 contract BetContract {
     address public owner;
     Game[] public games;   //represents the games
@@ -80,8 +80,8 @@ contract BetContract {
         games[_gameId].bets[msg.sender] = Bet(msg.sender, _gameId, _winPrediction);
         games[_gameId].betCount++;
         if (_winPrediction == 1)  games[_gameId].counterTeamOne++;
-        else if (_winPrediction == 2)  games[_gameId].counterTeamTwo++;
-        else if (_winPrediction == 3)  games[_gameId].counterDraw++;
+        if (_winPrediction == 2)  games[_gameId].counterTeamTwo++;
+        if (_winPrediction == 3)  games[_gameId].counterDraw++;
     }
 
     //close existing game when it begins (only by owner)

@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.0;
 
-//atm supports only bettors betting against each other for the same amount of money (no sanity checks)
 contract BetContract {
     address public owner;
     Game[] public games;   //represents the games
@@ -27,8 +25,6 @@ contract BetContract {
         mapping(address => Bet) bets;     // Use a mapping for bets with userAddress => Bet
         uint betCount; // Track the number of bets for iteration
     }
-
-    //Oracles durchsuchen / API zum Ergebnisse abfragen (-> ChainLink DataFeed) => Niklas/Kujtim
 
     constructor() {
         owner = msg.sender;
@@ -61,7 +57,7 @@ contract BetContract {
     }
 
 
-    //add a new game using a name and the betAmount(only by owner)
+    //add a new game using a name and the betAmount (only by owner)
     function addGame(string memory _name, uint _betAmount) public onlyOwner {
         uint gameId = games.length;
         Game storage newGame = games.push();

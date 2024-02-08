@@ -63,7 +63,7 @@ contract BetContract {
         Game storage newGame = games.push();
         newGame.id = gameId;
         newGame.name = _name;
-        newGame.betAmount = _betAmount;
+        newGame.betAmount = _betAmount*1000000000000000000;
     }
 
     //add a bet for a game using a gameId and winPrediction
